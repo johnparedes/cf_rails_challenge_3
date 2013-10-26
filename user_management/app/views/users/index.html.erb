@@ -13,7 +13,7 @@
         <td><%= link_to user.first_name.to_s + " " + user.last_name.to_s, user %></td>
         <td><%= user.email_type + " email: " + user.email %></td>
         <td><%= link_to "Edit", edit_user_path(user) %></td>
-        <td><%= link_to "Delete", user, data: { confirm: "Are you sure you want to delete the user?" },  method: :delete %></td>
+        <td><%= link_to "Delete", user, data: { confirm: "Are you sure you want to delete the user " + user.first_name.to_s + " " + user.last_name.to_s + "?" },  method: :delete %></td>
       </tr>
     <% end %>
     </tbody>

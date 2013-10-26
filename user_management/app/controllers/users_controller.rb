@@ -3,7 +3,7 @@ class UsersController < ApplicationController
 before_action :find_user, only: %w(edit update show)
 
   def index
-    @user = User.order("last_name DESC")
+    @user = User.order("last_name ASC")
   end
 
   def show

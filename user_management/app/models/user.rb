@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
   validates :email, uniqueness: true
-  validates :first_name, :last_name, presence: true
+  validates :first_name, :last_name, presence: true,
+    format: { with: /\D/, on: :create }
 
   def email=(value)
     value = value.strip.downcase
