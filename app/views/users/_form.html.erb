@@ -1,0 +1,22 @@
+<%= form_for @user do |f| %>
+  <p><div class="field">
+    <%= f.label :first_name %>
+    <%= f.text_field :first_name %>
+  </div></p>
+  <p><div class="field">
+    <%= f.label :last_name %>
+    <%= f.text_field :last_name %>
+  </div></p>  <p><div class="field">
+    <%= f.label :email %>
+    <%= f.email_field :email %>
+  </div></p>
+  <p><div class="field">
+    <%= f.label(:email_type, "Home") %>
+    <%= f.radio_button(:email_type, "Home") %>
+  </div></p>
+  <p><div class="field">
+    <%= f.label(:email_type, "Work") %>
+    <%= f.radio_button(:email_type, "Work") %>
+  </div></p>
+  <%= f.submit %>
+<% end %>
