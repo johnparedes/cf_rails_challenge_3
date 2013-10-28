@@ -7,4 +7,3 @@ Generate a Rails app that allows a user to create, edit, update, and destroy (de
 IMPLEMENTATION
 
 Users can create, read, update, and delete user records.  I added a radio button to select designate a user's email address as either home or work.  There are flash notifications when a user record is created, updated, or deleted.  Clicking delete will prompt the user to confirm deletion.
-
