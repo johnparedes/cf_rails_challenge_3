@@ -1,28 +1,9 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+INSTRUCTIONS
 
-Things you may want to cover:
+Generate a Rails app that allows a user to create, edit, update, and destroy (delete) users. Users should have first name, last name, and email address fields. Deploy this app to Heroku (a free *.herokuapp.com URL) so we can test it out live. If you have time, add extra features to this app (be creative) and tell us what you did so we don’t miss it.
 
-* Ruby version
+IMPLEMENTATION
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Users can create, read, update, and delete user records.  I added a radio button to select designate a user's email address as either home or work.  There are flash notifications when a user record is created, updated, or deleted.  Clicking delete will prompt the user to confirm deletion.
